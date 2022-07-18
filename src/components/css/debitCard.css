@@ -1,0 +1,144 @@
+.rightMenu {
+  width: 350px;
+  height: calc(100%);
+  background-color: #fff;
+  position: fixed;
+  top: 60px;
+  right: 0;
+  z-index: 105;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 10px;
+  transform: translateX(200%);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
+}
+.rightMenu.active {
+  transform: translateX(0%);
+}
+.debitCardContainer {
+  padding: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.debitCard {
+  position: relative;
+  width: 100%;
+  height: 170px;
+  min-width: 300px;
+  min-height: 170px;
+  border-radius: 15px;
+}
+
+.debitCard::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #f8901c;
+  transform: rotate(5deg);
+  border-radius: 15px;
+  filter: blur(2px);
+  z-index: -2;
+}
+.debitCard::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border-radius: 15px;
+  background: #f8901c;
+  backdrop-filter: blur(10px);
+  z-index: -1;
+  border: solid rgba(255, 255, 255, 0.4);
+}
+
+.cardGroup {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card_logo,
+.card_chip,
+.card_number,
+.card_name,
+.card_from,
+.card_to,
+.card_ring {
+  position: absolute;
+}
+
+.card_logo {
+  width: 60px;
+  top: 30px;
+  right: 30px;
+  height: auto;
+}
+
+.card_chip {
+  width: 60px;
+  top: 50px;
+  left: 20px;
+  height: auto;
+}
+
+.card_name,
+.card_from,
+.card_to,
+.card_number {
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.card_number {
+  left: 30px;
+  bottom: 60px;
+}
+
+.card_name {
+  font-size: 12px;
+  bottom: 20px;
+  left: 30px;
+}
+.card_from {
+  font-size: 12px;
+  bottom: 20px;
+  right: 90px;
+}
+.card_to {
+  font-size: 12px;
+  bottom: 20px;
+  right: 30px;
+}
+
+.card_ring {
+  height: 400px;
+  width: 400px;
+  border-radius: 100vw;
+  background: transparent;
+  border: 50px solid rgba(0, 0, 0, 0.1);
+  top: -250px;
+  right: -250px;
+  box-sizing: border-box;
+}
+.card_ring::after {
+  position: absolute;
+  content: "";
+  height: 500px;
+  width: 500px;
+  border-radius: 100vw;
+  background: transparent;
+  border: 50px solid rgba(0, 0, 0, 0.1);
+  top: 185px;
+  right: -155px;
+  box-sizing: border-box;
+}

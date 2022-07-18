@@ -1,0 +1,17 @@
+/* @media screen and (min-width: 650px) {
+  .rowContainer {
+    justify-content: space-between;
+  }
+  .inputBox {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .toggleMenu {
+    display: none;
+  }
+  .profileContainer .userName {
+    display: block;
+  }
+} */

@@ -1,0 +1,164 @@
+.dishContainer {
+  width: 100%;
+  padding: 10px 0;
+}
+
+.menuCart {
+  width: 100%;
+}
+
+.subMenuContainer,
+.viewAll {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subMenuContainer h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2a2b3c;
+}
+
+.subMenuContainer .viewAll p {
+  font-size: 12px;
+  /* background-color: #f8901c; */
+  color: #f8901c;
+  border-radius: 10px;
+  font-weight: 400;
+}
+.subMenuContainer .viewAll i {
+  background-color: #f8901c;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.subMenuContainer .viewAll i .MuiSvgIcon-root {
+  font-size: 16px;
+  color: #faf9fa;
+}
+
+.rowContainer {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.rowContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.rowMenuCart {
+  width: 80px;
+  min-width: 80px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+  margin-right: 12px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+.rowMenuCart:hover,
+.rowMenuCart.active {
+  background-color: #f8901c;
+}
+.rowMenuCart .imgBox {
+  width: 40px;
+  height: 40px;
+  min-height: 40px;
+  min-width: 40px;
+  background-color: #f8901c;
+  border-radius: 100vw;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.rowMenuCart:hover .imgBox,
+.rowMenuCart.active .imgBox {
+  background-color: #fff;
+}
+
+.rowMenuCart .imgBox img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+.rowMenuCart:hover .imgBox img,
+.rowMenuCart.active .imgBox img {
+  width: 80%;
+  height: 80%;
+  transition: 0.5s;
+}
+.rowMenuCart h3 {
+  color: #f8901c;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.5s;
+  padding: 5px;
+}
+.rowMenuCart:hover h3,
+.rowMenuCart.active h3 {
+  color: #faf9fa;
+}
+.rowMenuCart .loadMenu {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background: #f8901c;
+  transition: 0.5s;
+}
+.rowMenuCart:hover .loadMenu,
+.rowMenuCart.active .loadMenu {
+  background-color: #faf9fa;
+}
+.rowMenuCart .loadMenu .MuiSvgIcon-root {
+  font-size: 18px;
+  color: #faf9fa;
+}
+
+.rowMenuCart:hover .loadMenu .MuiSvgIcon-root,
+.rowMenuCart.active .loadMenu .MuiSvgIcon-root {
+  color: #000;
+}
+
+@media screen and (min-width: 650px) {
+  .rowContainer {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .profileContainer .userName {
+    display: block;
+  }
+  .subMenuContainer,
+  .viewAll {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}

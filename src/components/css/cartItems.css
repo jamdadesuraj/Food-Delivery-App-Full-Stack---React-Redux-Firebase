@@ -1,0 +1,135 @@
+.cartCheckOutContainer {
+  width: 100%;
+  min-width: 300px;
+}
+
+.cartContainer {
+  width: 100%;
+  max-width: 330px;
+  max-height: 300px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-top: 10px;
+}
+
+.cartContainer ::-webkit-scrollbar {
+  display: none;
+}
+
+.cardItem {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+}
+.cardItem .imgBox {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #00ffc855;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.cardItem .imgBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.cardItem .itemSection {
+  margin-left: 10px;
+}
+
+.cardItem .itemSection .itemName {
+  font-size: 16px;
+  color: #2a2b3c;
+  text-transform: capitalize;
+}
+
+.cardItem .itemSection .itemQuantity {
+  font-size: 16px;
+  color: #2a2b3c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 120px;
+}
+
+.cardItem .itemSection .itemQuantity span {
+  color: #f8a109;
+}
+
+.cardItem .itemSection .itemQuantity .quantity {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 60px;
+}
+
+.cardItem .itemSection .itemQuantity .quantity .itemRemove,
+.cardItem .itemSection .itemQuantity .quantity .itemAdd {
+  color: #2a2b3c;
+  font-size: 24px;
+}
+
+.cardItem .itemPrice {
+  font-size: 16px;
+  font-weight: 600;
+  color: #2a2b3c;
+  margin-left: auto;
+}
+
+.cardItem .itemPrice .dollerSign {
+  font-size: 12px;
+  color: #f8a109;
+}
+.cardItem .itemPrice .itemPriceValue {
+  font-size: 16px;
+  color: #2a2b3c;
+}
+
+.totalSection {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0;
+  padding: 5px 8px;
+}
+
+.totalSection h3 {
+  color: #2a2b3c;
+  font-weight: 600;
+  font-size: 18px;
+}
+.totalSection p {
+  color: #2a2b3c;
+  font-weight: 600;
+  font-size: 18px;
+}
+.totalSection p span {
+  color: #f8a109;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.checkout {
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  background: #f8a109;
+  color: #fff;
+  letter-spacing: 2px;
+  border-radius: 15px;
+}

@@ -1,0 +1,103 @@
+main {
+  width: 100%;
+  height: auto;
+
+  margin-top: 60px;
+}
+
+.mainContainer {
+  width: 100%;
+  height: auto;
+  background: #faf9fb;
+  padding: 10px;
+  /* padding-bottom: 100px; */
+}
+
+.banner {
+  width: 100%;
+  height: 130px;
+  border-radius: 10px;
+  background: url("https://firebasestorage.googleapis.com/v0/b/food-delivery-37c59.appspot.com/o/Images%2Fbanner.png?alt=media&token=7e244d84-8821-477d-b273-4c9381a474fb")
+    no-repeat center;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0px 10px;
+}
+.deliveryPic {
+  position: absolute;
+  right: 28px;
+  bottom: -1px;
+  width: 110px;
+}
+
+.bannerContent {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.bannerContent h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2a2b3c;
+}
+.bannerContent p {
+  width: 200px;
+  font-size: 14px;
+  color: #989594;
+  margin: 5px 0;
+}
+.bannerContent p span {
+  font-weight: 600;
+  color: #f8901c;
+}
+
+.bannerContent a {
+  background-color: #f8901c;
+  padding: 5px 15px;
+  color: #faf9fb;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+.bannerContent a:hover {
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+
+@media screen and (min-width: 950px) {
+  .banner {
+    width: 100%;
+    height: 330px;
+    border-radius: 10px;
+    background: url("https://firebasestorage.googleapis.com/v0/b/food-delivery-37c59.appspot.com/o/Images%2Fbanner.png?alt=media&token=7e244d84-8821-477d-b273-4c9381a474fb")
+      no-repeat center;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+  }
+
+  .deliveryPic {
+    position: absolute;
+    right: 100px;
+    bottom: -1px;
+    width: 250px;
+  }
+  .bannerContent h3 {
+    font-size: 80px;
+  }
+  .bannerContent p {
+    width: 300px;
+    font-size: 24px;
+    color: #989594;
+    margin: 5px 0;
+  }
+}
